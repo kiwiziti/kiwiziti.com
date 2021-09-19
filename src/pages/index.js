@@ -4,7 +4,8 @@ import { StaticImage } from "gatsby-plugin-image"
 // styles
 const pageStyles = {
   color: "#232129",
-  padding: 96,
+  paddingLeft: 96,
+  paddingRight: 96,
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 }
 
@@ -19,6 +20,7 @@ const IndexPage = () => {
         </a>
         
       <StaticImage src="../images/wedding-hero.jpg" alt="us" />
+      <h1>More info coming soon...</h1>
     </main>
   )
 }
