@@ -12,7 +12,7 @@ const pageStyles = {
 const IndexPage = () => {
   return (
     <main style={pageStyles}>
-      <title>Home Page</title>
+      <title>Sam &amp; Matt</title>
         <h1>We're getting married!</h1>
         <b>6/4/2022</b>
         <a href="https://www.pavilionatnicksroad.com/">
