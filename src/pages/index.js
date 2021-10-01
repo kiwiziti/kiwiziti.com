@@ -3,8 +3,6 @@ import KiwiZitiImage from '../images/kiwiziti.svg';
 
 const center = {
   alignSelf: "center",
-  // marginLeft: "auto",
-  // marginRight: "auto",
 }
 
 const pageStyles = {
