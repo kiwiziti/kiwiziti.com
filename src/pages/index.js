@@ -18,7 +18,7 @@ const pageStyles = {
 const IndexPage = () => {
   return (
     <main style={pageStyles}>
-      <title>workinonit</title>
+      <title>kiwiziti.com | Sam &amp; Matt</title>
       <KiwiZitiImage style={center}/>
     </main>
   )
