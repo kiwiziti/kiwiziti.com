@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://kiwiziti.com/",
     title: "Wedding Website",
   },
   plugins: [
