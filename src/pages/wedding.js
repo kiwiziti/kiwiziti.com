@@ -11,7 +11,7 @@ const pageStyles = {
 const WeddingPage = () => {
   return (
     <main style={pageStyles}>
-      <title>Sam &amp; Matt</title>
+      <title>kiwiziti.com | Sam &amp; Matt</title>
         <h1>We're getting married!</h1>
         <b>6/4/2022</b>
         <a href="https://www.pavilionatnicksroad.com/">
