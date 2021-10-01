@@ -19,6 +19,9 @@ const pageStyles = {
 const IndexPage = () => {
   return (
     <main style={pageStyles}>
+      <a href="/wedding">
+        <p>/wedding</p>
+      </a>
       <title>kiwiziti.com | Sam &amp; Matt</title>
       <KiwiZitiImage style={center}/>
       <h2 style={center}>kiwi | ziti</h2>
