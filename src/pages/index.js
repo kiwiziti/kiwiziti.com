@@ -1,6 +1,16 @@
 import * as React from "react"
+import KiwiZitiImage from '../images/kiwiziti.svg';
+
+const center = {
+  alignSelf: "center",
+  // marginLeft: "auto",
+  // marginRight: "auto",
+}
 
 const pageStyles = {
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
   color: "#232129",
   paddingLeft: 96,
   paddingRight: 96,
@@ -11,7 +21,7 @@ const IndexPage = () => {
   return (
     <main style={pageStyles}>
       <title>workinonit</title>
-        <h1>workinonit</h1>
+      <KiwiZitiImage style={center}/>
     </main>
   )
 }
