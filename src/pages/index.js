@@ -1,4 +1,5 @@
 import * as React from "react"
+import Helmet from "react-helmet"
 import KiwiZitiImage from '../images/kiwiziti.svg';
 import "@fontsource/inter"
 
@@ -26,15 +27,20 @@ const pageStyles = {
 
 const IndexPage = () => {
   return (
-    <main style={pageStyles}>
-      <title>kiwiziti.com | Sam &amp; Matt</title>
+    <div id="wrapper">
+      <Helmet>
+        <title>kiwiziti.com | Sam &amp; Matt</title>
+        <meta name="theme-color" content="white" />
+      </Helmet>
+      <main style={pageStyles}>
         <a href="/wedding">
           <p>/wedding</p>
         </a>
         <KiwiZitiImage style={image}/>
         <h2 style={text}>kiwi | ziti</h2>
         <h1 style={text}>things samantha and matt host</h1>
-    </main>
+      </main>
+    </div>
   )
 }
 

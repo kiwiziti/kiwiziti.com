@@ -1,4 +1,5 @@
 import * as React from "react"
+import Helmet from "react-helmet"
 import { StaticImage } from "gatsby-plugin-image"
 import "@fontsource/inter"
 
@@ -13,8 +14,12 @@ const pageStyles = {
 
 const WeddingPage = () => {
   return (
-    <main style={pageStyles}>
-      <title>kiwiziti.com | Sam &amp; Matt</title>
+    <div id="wrapper">
+      <Helmet>
+        <title>kiwiziti.com | Sam &amp; Matt</title>
+        <meta name="theme-color" content="white" />
+      </Helmet>
+      <main style={pageStyles}>
         <a href="/">
           <p>home</p>
         </a>
@@ -23,10 +28,10 @@ const WeddingPage = () => {
         <a href="https://www.pavilionatnicksroad.com/">
           <p>The Pavillion at Nicks Rd, Mebane, NC</p>
         </a>
-
-      <StaticImage src="../images/wedding-hero.jpg" alt="us" />
-      <h1>More info coming soon...</h1>
-    </main>
+        <StaticImage src="../images/wedding-hero.jpg" alt="us" />
+        <h1>More info coming soon...</h1>
+      </main>
+    </div>
   )
 }
 
