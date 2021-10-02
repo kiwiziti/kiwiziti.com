@@ -25,7 +25,7 @@ module.exports = {
         background_color: `white`,
         theme_color: `white`,
         display: `standalone`,
-        icon: `src/images/kiwiziti.svg`,
+        icon: `src/images/kiwiziti.min.svg`,
       },
     },
     {

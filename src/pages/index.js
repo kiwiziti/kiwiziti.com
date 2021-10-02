@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import Helmet from "react-helmet"
-import KiwiZitiImage from '../images/kiwiziti.svg';
+import KiwiZitiImage from '../images/kiwiziti.min.svg';
 import "@fontsource/inter"
 
 const text = {
