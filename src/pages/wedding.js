@@ -3,8 +3,8 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const pageStyles = {
   color: "#232129",
-  paddingLeft: 96,
-  paddingRight: 96,
+  margin: "0 auto",
+  width: "90%",
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 }
 
