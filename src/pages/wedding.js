@@ -1,11 +1,12 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
+import "@fontsource/inter"
 
 const pageStyles = {
   color: "#232129",
   margin: "0 auto",
   width: "90%",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
+  fontFamily: "inter",
 }
 
 const WeddingPage = () => {

@@ -1,5 +1,6 @@
 import * as React from "react"
 import KiwiZitiImage from '../images/kiwiziti.svg';
+import "@fontsource/inter"
 
 const center = {
   alignSelf: "center",
@@ -17,7 +18,7 @@ const pageStyles = {
   alignItems: "center",
   justifyContent: "center",
   color: "#232129",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
+  fontFamily: "inter",
 }
 
 const IndexPage = () => {
