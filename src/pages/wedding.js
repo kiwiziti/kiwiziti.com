@@ -6,7 +6,7 @@ const pageStyles = {
   color: "#232129",
   margin: "0 auto",
   width: "90%",
-  fontFamily: "inter",
+  fontFamily: "Inter",
   maxWidth: "500px",
 }
 

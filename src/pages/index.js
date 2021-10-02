@@ -20,7 +20,7 @@ const pageStyles = {
   alignItems: "center",
   justifyContent: "center",
   color: "#232129",
-  fontFamily: "inter",
+  fontFamily: "Inter",
 }
 
 const IndexPage = () => {
