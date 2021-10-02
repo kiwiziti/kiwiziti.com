@@ -4,6 +4,7 @@ import "@fontsource/inter"
 
 const center = {
   alignSelf: "center",
+  justifyContent: "center",
 }
 
 const image = {
