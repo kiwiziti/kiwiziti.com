@@ -5,6 +5,12 @@ const center = {
   alignSelf: "center",
 }
 
+const imgCenter = {
+  width: "100%",
+  height: "100%",
+}
+
+
 const pageStyles = {
   display: "flex",
   flexDirection: "column",
@@ -23,7 +29,7 @@ const IndexPage = () => {
         <a href="/wedding">
           <p>/wedding</p>
         </a>
-        <KiwiZitiImage style={center}/>
+        <KiwiZitiImage style={imgCenter}/>
         <h2 style={center}>kiwi | ziti</h2>
         <h1 style={center}>things samantha and matt host</h1>
     </main>
