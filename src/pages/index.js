@@ -6,7 +6,7 @@ const center = {
   alignSelf: "center",
 }
 
-const imgCenter = {
+const image = {
   width: "100%",
   height: "100%",
 }
@@ -28,7 +28,7 @@ const IndexPage = () => {
         <a href="/wedding">
           <p>/wedding</p>
         </a>
-        <KiwiZitiImage style={imgCenter}/>
+        <KiwiZitiImage style={image}/>
         <h2 style={center}>kiwi | ziti</h2>
         <h1 style={center}>things samantha and matt host</h1>
     </main>
