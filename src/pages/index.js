@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Link } from "gatsby"
 import Helmet from "react-helmet"
 import KiwiZitiImage from '../images/kiwiziti.svg';
 import "@fontsource/inter"
@@ -33,9 +34,7 @@ const IndexPage = () => {
         <meta name="theme-color" content="white" />
       </Helmet>
       <main style={pageStyles}>
-        <a href="/wedding">
-          <p>/wedding</p>
-        </a>
+        <Link to="/wedding">/wedding</Link>
         <KiwiZitiImage style={image}/>
         <h2 style={text}>kiwi | ziti</h2>
         <h1 style={text}>things samantha and matt host</h1>

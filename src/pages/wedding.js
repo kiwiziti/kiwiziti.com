@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Link } from "gatsby"
 import Helmet from "react-helmet"
 import { StaticImage } from "gatsby-plugin-image"
 import "@fontsource/inter"
@@ -20,9 +21,7 @@ const WeddingPage = () => {
         <meta name="theme-color" content="white" />
       </Helmet>
       <main style={pageStyles}>
-        <a href="/">
-          <p>home</p>
-        </a>
+        <Link to="/">home</Link>
         <h1>We're getting married!</h1>
         <b>6/4/2022</b>
         <a href="https://www.pavilionatnicksroad.com/">
