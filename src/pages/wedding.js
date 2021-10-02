@@ -2,7 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 import Helmet from "react-helmet"
 import { StaticImage } from "gatsby-plugin-image"
-import "@fontsource/inter"
+import "@fontsource/inter/variable.css"
 
 const text = {
   display: "block",
@@ -15,7 +15,7 @@ const pageStyles = {
   color: "#232129",
   margin: "0 auto",
   width: "90%",
-  fontFamily: "Inter",
+  fontFamily: "InterVariable",
   maxWidth: "500px",
   backgroundColor: "white",
 }

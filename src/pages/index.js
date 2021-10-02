@@ -2,7 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 import Helmet from "react-helmet"
 import KiwiZitiImage from '../images/kiwiziti.min.svg';
-import "@fontsource/inter"
+import "@fontsource/inter/variable.css"
 
 const text = {
   width: "100%",
@@ -22,7 +22,7 @@ const pageStyles = {
   alignItems: "center",
   justifyContent: "center",
   color: "#232129",
-  fontFamily: "Inter",
+  fontFamily: "InterVariable",
   backgroundColor: "white",
 }
 
