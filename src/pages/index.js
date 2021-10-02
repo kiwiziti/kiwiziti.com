@@ -8,11 +8,16 @@ const text = {
   width: "100%",
   height: "100%",
   textAlign: "center",
+  position: "relative",
+  zIndex: 2,
 }
 
 const image = {
   width: "100%",
   maxWidth: "500px",
+  marginTop: "-75px",
+  position: "relative",
+  zIndex: 1,
 }
 
 
@@ -24,6 +29,7 @@ const pageStyles = {
   color: "#232129",
   fontFamily: "InterVariable",
   backgroundColor: "white",
+  position: "relative",
 }
 
 const IndexPage = () => {
@@ -34,7 +40,7 @@ const IndexPage = () => {
         <meta name="theme-color" content="white" />
       </Helmet>
       <main style={pageStyles}>
-        <Link to="/wedding">/wedding</Link>
+        <Link style={text} to="/wedding">/wedding</Link>
         <KiwiZitiImage style={image}/>
         <h2 style={text}>kiwi | ziti</h2>
         <h1 style={text}>things samantha and matt host</h1>
