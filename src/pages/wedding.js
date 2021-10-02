@@ -4,6 +4,13 @@ import Helmet from "react-helmet"
 import { StaticImage } from "gatsby-plugin-image"
 import "@fontsource/inter"
 
+const text = {
+  display: "block",
+  marginLeft: "auto",
+  marginRight: "auto",
+  textAlign: "center",
+}
+
 const pageStyles = {
   color: "#232129",
   margin: "0 auto",
@@ -21,7 +28,7 @@ const WeddingPage = () => {
         <meta name="theme-color" content="white" />
       </Helmet>
       <main style={pageStyles}>
-        <Link to="/">home</Link>
+        <Link to="/" style={text}>home</Link>
         <h1>We're getting married!</h1>
         <b>6/4/2022</b>
         <a href="https://www.pavilionatnicksroad.com/">
