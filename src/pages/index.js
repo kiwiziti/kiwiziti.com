@@ -2,14 +2,9 @@ import * as React from "react"
 import KiwiZitiImage from '../images/kiwiziti.svg';
 import "@fontsource/inter"
 
-const center = {
-  alignSelf: "center",
-  justifyContent: "center",
-}
-
 const image = {
   width: "100%",
-  height: "100%",
+  maxWidth: "500px",
 }
 
 
@@ -30,8 +25,8 @@ const IndexPage = () => {
           <p>/wedding</p>
         </a>
         <KiwiZitiImage style={image}/>
-        <h2 style={center}>kiwi | ziti</h2>
-        <h1 style={center}>things samantha and matt host</h1>
+        <h2>kiwi | ziti</h2>
+        <h1>things samantha and matt host</h1>
     </main>
   )
 }
