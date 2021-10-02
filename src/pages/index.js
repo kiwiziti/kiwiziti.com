@@ -8,16 +8,11 @@ const text = {
   width: "100%",
   height: "100%",
   textAlign: "center",
-  position: "relative",
-  zIndex: 2,
 }
 
 const image = {
   width: "100%",
   maxWidth: "500px",
-  marginTop: "-75px",
-  position: "relative",
-  zIndex: 1,
 }
 
 
@@ -29,7 +24,6 @@ const pageStyles = {
   color: "#232129",
   fontFamily: "InterVariable",
   backgroundColor: "white",
-  position: "relative",
 }
 
 const IndexPage = () => {
