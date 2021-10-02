@@ -17,8 +17,6 @@ const pageStyles = {
   alignItems: "center",
   justifyContent: "center",
   color: "#232129",
-  paddingLeft: 96,
-  paddingRight: 96,
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 }
 
