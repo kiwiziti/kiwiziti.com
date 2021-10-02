@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://kiwiziti.com/",
-    title: "Wedding Website",
+    title: "Home page",
   },
   plugins: [
     "gatsby-plugin-image",
@@ -21,8 +21,8 @@ module.exports = {
         name: `GatsbyJS`,
         short_name: `GatsbyJS`,
         start_url: `/`,
-        background_color: `#f7f0eb`,
-        theme_color: `#a2466c`,
+        background_color: `white`,
+        theme_color: `white`,
         display: `standalone`,
         icon: `src/images/kiwiziti.svg`,
       },

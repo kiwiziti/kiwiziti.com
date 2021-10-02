@@ -21,6 +21,7 @@ const pageStyles = {
   justifyContent: "center",
   color: "#232129",
   fontFamily: "Inter",
+  backgroundColor: "white",
 }
 
 const IndexPage = () => {

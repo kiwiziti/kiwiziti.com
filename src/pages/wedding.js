@@ -8,6 +8,7 @@ const pageStyles = {
   width: "90%",
   fontFamily: "Inter",
   maxWidth: "500px",
+  backgroundColor: "white",
 }
 
 const WeddingPage = () => {
