@@ -2,6 +2,12 @@ import * as React from "react"
 import KiwiZitiImage from '../images/kiwiziti.svg';
 import "@fontsource/inter"
 
+const text = {
+  width: "100%",
+  height: "100%",
+  textAlign: "center",
+}
+
 const image = {
   width: "100%",
   maxWidth: "500px",
@@ -25,8 +31,8 @@ const IndexPage = () => {
           <p>/wedding</p>
         </a>
         <KiwiZitiImage style={image}/>
-        <h2>kiwi | ziti</h2>
-        <h1>things samantha and matt host</h1>
+        <h2 style={text}>kiwi | ziti</h2>
+        <h1 style={text}>things samantha and matt host</h1>
     </main>
   )
 }
