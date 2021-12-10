@@ -14,7 +14,7 @@ module.exports = {
     siteDescription: `The wedding website of Matt Covalt and Samantha Davis.`,
     siteLanguage: `en`,
     siteImage: `/banner.jpg`,
-    author: `@lekoarts_de`,
+    author: `@samanthasheadavis`,
   },
   plugins: [
     {
