@@ -7,8 +7,8 @@ module.exports = {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-jodie/gatsby-config.js
-    siteTitle: `Samantha Davis && Matt Covalt`,
-    siteTitleAlt: `Samantha Davis && Matt Covalt`,
+    siteTitle: `Sam && Matt`,
+    siteTitleAlt: `Sam && Matt`,
     siteHeadline: `Our Wedding: Samantha Davis && Matt Covalt`,
     siteUrl: `https://kiwiziti.com`,
     siteDescription: `The wedding website of Matt Covalt and Samantha Davis.`,
@@ -23,7 +23,7 @@ module.exports = {
       options: {
         navigation: [
           { name: `Photos`, slug: `/projects` },
-          { name: `About`, slug: `/about` },
+          { name: `Info`, slug: `/info` },
         ],
       },
     },
