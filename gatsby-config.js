@@ -21,9 +21,11 @@ module.exports = {
       resolve: `@lekoarts/gatsby-theme-jodie`,
       // See the theme's README for all available options
       options: {
+        homepageProjectLimit: 10,
         navigation: [
-          { name: `Photos`, slug: `/projects` },
+          { name: `Home`, slug: `/` },
           { name: `Info`, slug: `/info` },
+          { name: `Photos`, slug: `/projects` },
         ],
       },
     },
