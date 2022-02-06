@@ -1,9 +1,10 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import Helmet from "react-helmet";
-import { StaticImage } from "gatsby-plugin-image";
 import InfoSection from "../components/info";
+import { StaticImage } from "gatsby-plugin-image";
 import "@fontsource/inter/variable.css";
+import { useGallery } from "../utils/hooks/useGallery";
 
 const text = {
   display: "block",
