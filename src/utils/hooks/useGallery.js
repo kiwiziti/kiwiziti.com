@@ -8,7 +8,6 @@ export const useGallery = () => {
           sourceInstanceName: { eq: "images" }
           relativeDirectory: { eq: "photos" }
         }
-        limit: 50
       ) {
         nodes {
           id
