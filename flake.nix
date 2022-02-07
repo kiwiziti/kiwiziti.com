@@ -28,7 +28,7 @@
             buildInputs = with pkgs; [ nodePackages.node-gyp stdenv vips ];
           };
           preInstallLinks = {
-            "sharp"."vendor/" = sharp-libvips;
+            "sharp"."vendor/" = sharp-libvips.outPath;
           };
           buildCommands = [
             "export XDG_CONFIG_HOME=\"$(pwd)/.config\""
