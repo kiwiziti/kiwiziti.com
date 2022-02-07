@@ -19,7 +19,7 @@
       rec {
         defaultPackage = npm.build {
           src = ./.;
-          buildInputs = with pkgs; [ ];
+          buildInputs = with pkgs; [ pkgs.stdenv ];
           buildCommands = [
             "export XDG_CONFIG_HOME=\"$(pwd)/.config\""
             "export GATSBY_TELEMETRY_DISABLED=1"
