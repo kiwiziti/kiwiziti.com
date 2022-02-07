@@ -19,9 +19,9 @@
       rec {
         defaultPackage = npm.build {
           src = ./.;
-          buildInputs = with pkgs; [ ];
+          buildInputs = with pkgs; [ nodePackages.node-gyp-build ];
           node_modules_attrs = {
-            buildInputs = with pkgs; [ stdenv ];
+            buildInputs = with pkgs; [ ];
           };
           buildCommands = [
             "export XDG_CONFIG_HOME=\"$(pwd)/.config\""
