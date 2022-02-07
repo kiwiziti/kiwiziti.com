@@ -19,9 +19,9 @@
       rec {
         defaultPackage = npm.build {
           src = ./.;
-          buildInputs = with pkgs; [ pkgs.stdenv ];
+          buildInputs = with pkgs; [ ];
           node_modules_attrs = {
-            buildInputs = [ pkgs.zlib ];
+            buildInputs = with pkgs; [ stdenv ];
           };
           buildCommands = [
             "export XDG_CONFIG_HOME=\"$(pwd)/.config\""
