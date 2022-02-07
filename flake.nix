@@ -19,7 +19,7 @@
       rec {
         defaultPackage = npm.build {
           src = ./.;
-          buildInputs = with pkgs; [ nodePackages.gatsby-cli ];
+          buildInputs = with pkgs; [ nodePackages.gatsby-cli libvips ];
           buildCommands = [
             "export XDG_CONFIG_HOME=\"$(pwd)/.config\""
             "export GATSBY_TELEMETRY_DISABLED=1"
