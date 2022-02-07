@@ -21,9 +21,9 @@
           src = ./.;
           buildInputs = with pkgs; [ ];
           node_modules_attrs = {
+            SHARP_IGNORE_GLOBAL_LIBVIPS=1;
             buildInputs = with pkgs; [ nodePackages.node-gyp stdenv vips ];
           };
-          SHARP_IGNORE_GLOBAL_LIBVIPS=1;
           buildCommands = [
             "export XDG_CONFIG_HOME=\"$(pwd)/.config\""
             "export GATSBY_TELEMETRY_DISABLED=1"
