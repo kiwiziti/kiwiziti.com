@@ -4,6 +4,10 @@
   inputs = {
     nixpkgs.url = github:nixos/nixpkgs/nixpkgs-unstable;
     flake-utils.url = github:numtide/flake-utils;
+    sharp-libvips = {
+      url = github:lovell/sharp-libvips;
+      flake = false;
+    };
     npmlock2nix = {
       url = github:nix-community/npmlock2nix;
       flake = false;
@@ -21,8 +25,10 @@
           src = ./.;
           buildInputs = with pkgs; [ ];
           node_modules_attrs = {
-            SHARP_IGNORE_GLOBAL_LIBVIPS=1;
             buildInputs = with pkgs; [ nodePackages.node-gyp stdenv vips ];
+          };
+          preInstallLinks = {
+            "sharp"."vendor/" = sharp-libvips;
           };
           buildCommands = [
             "export XDG_CONFIG_HOME=\"$(pwd)/.config\""
