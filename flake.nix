@@ -19,11 +19,11 @@
       rec {
         defaultPackage = npm.build {
           src = ./.;
-          buildInputs = with pkgs; [ ];
-          GATSBY_TELEMETRY_DISABLED=1;
-          GATSBY_CPU_COUNT=1;
+          buildInputs = with pkgs; [ nodePackages.gatsby-cli ];
           buildCommands = [
             "export XDG_CONFIG_HOME=\"$(pwd)/.config\""
+            "export GATSBY_TELEMETRY_DISABLED=1"
+            "export GATSBY_CPU_COUNT=1"
             "npm run build -- --no-color --verbose"
           ];
           installPhase = "cp -r public/ $out/";
