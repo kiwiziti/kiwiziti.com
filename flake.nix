@@ -21,11 +21,8 @@
           src = ./.;
           buildInputs = with pkgs; [ ];
           preInstallLinks = {
-            "node-gyp-build" = {
-              "vendor/node-gyp-build" = pkgs.nodePackages.node-gyp-build;
-            };
+            "node-gyp-build" = pkgs.nodePackages.node-gyp-build;
           };
-
           buildCommands = [
             "export XDG_CONFIG_HOME=\"$(pwd)/.config\""
             "export GATSBY_TELEMETRY_DISABLED=1"
