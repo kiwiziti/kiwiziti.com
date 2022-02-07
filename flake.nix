@@ -23,12 +23,9 @@
       rec {
         defaultPackage = npm.build {
           src = ./.;
-          buildInputs = with pkgs; [ ];
+          buildInputs = with pkgs; [ gcc nodePackages.node-gyp stdenv vips ];
           node_modules_attrs = {
-            buildInputs = with pkgs; [ nodePackages.node-gyp stdenv vips ];
-          };
-          preInstallLinks = {
-            "sharp/vendor" = sharp-libvips.outPath;
+            buildInputs = with pkgs; [ gcc nodePackages.node-gyp stdenv vips ];
           };
           buildCommands = [
             "export XDG_CONFIG_HOME=\"$(pwd)/.config\""
