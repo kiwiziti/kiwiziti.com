@@ -14,7 +14,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, flake-utils, npmlock2nix }:
+  outputs = { self, nixpkgs, flake-utils, npmlock2nix, sharp-libvips }:
     flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = nixpkgs.legacyPackages."${system}";
