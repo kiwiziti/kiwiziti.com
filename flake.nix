@@ -20,6 +20,9 @@
         defaultPackage = npm.build {
           src = ./.;
           buildInputs = with pkgs; [ pkgs.stdenv ];
+          node_modules_attrs = {
+            buildInputs = [ pkgs.zlib ];
+          };
           buildCommands = [
             "export XDG_CONFIG_HOME=\"$(pwd)/.config\""
             "export GATSBY_TELEMETRY_DISABLED=1"
