@@ -51,7 +51,24 @@
       "inputs": {
         "flake-utils": "flake-utils",
         "nixpkgs": "nixpkgs",
-        "npmlock2nix": "npmlock2nix"
+        "npmlock2nix": "npmlock2nix",
+        "sharp-libvips": "sharp-libvips"
+      }
+    },
+    "sharp-libvips": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1643705949,
+        "narHash": "sha256-JB+czOfKIhcGrqNV+qIQN/O0SHbP26nQXQ8XW+XSxk0=",
+        "owner": "lovell",
+        "repo": "sharp-libvips",
+        "rev": "50c04b5bde8125793e6e8d2ac41f38569cd0b5d5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "lovell",
+        "repo": "sharp-libvips",
+        "type": "github"
       }
     }
   },
