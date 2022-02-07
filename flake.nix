@@ -21,8 +21,8 @@
           src = ./.;
           buildInputs = with pkgs; [ ];
           preInstallLinks = {
-          "node-gyp-build" = {
-            "vendor/node-gyp-build" = "${pkgs.nodePackages.node-gyp-build}";
+            "node-gyp-build" = {
+              "vendor/node-gyp-build" = pkgs.nodePackages.node-gyp-build;
             };
           };
 
