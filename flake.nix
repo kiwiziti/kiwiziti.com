@@ -20,9 +20,6 @@
         defaultPackage = npm.build {
           src = ./.;
           buildInputs = with pkgs; [ ];
-          preInstallLinks = {
-            "node-gyp-build" = pkgs.nodePackages.node-gyp-build;
-          };
           GATSBY_TELEMETRY_DISABLED=1;
           GATSBY_CPU_COUNT=1;
           buildCommands = [
