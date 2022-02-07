@@ -23,10 +23,10 @@
           preInstallLinks = {
             "node-gyp-build" = pkgs.nodePackages.node-gyp-build;
           };
+          GATSBY_TELEMETRY_DISABLED=1;
+          GATSBY_CPU_COUNT=1;
           buildCommands = [
             "export XDG_CONFIG_HOME=\"$(pwd)/.config\""
-            "export GATSBY_TELEMETRY_DISABLED=1"
-            "export GATSBY_CPU_COUNT=1"
             "npm run build -- --no-color --verbose"
           ];
           installPhase = "cp -r public/ $out/";
