@@ -22,14 +22,15 @@
       in
       rec {
         defaultPackage = npm.build {
+          something = sharp-libvips;
           src = ./.;
           buildInputs = with pkgs; [ ];
           node_modules_attrs = {
             buildInputs = with pkgs; [ nodePackages.node-gyp stdenv vips ];
           };
-          preInstallLinks = {
-            "sharp"."vendor/" = "${sharp-libvips.outPath}";
-          };
+          # preInstallLinks = {
+          #   "sharp"."vendor" = "${sharp-libvips}";
+          # };
           buildCommands = [
             "export XDG_CONFIG_HOME=\"$(pwd)/.config\""
             "export GATSBY_TELEMETRY_DISABLED=1"
