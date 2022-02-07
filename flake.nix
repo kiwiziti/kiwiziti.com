@@ -21,7 +21,7 @@
           src = ./.;
           buildInputs = with pkgs; [ nodePackages.gatsby-cli ];
           node_modules_attrs = {
-            buildInputs = with pkgs; [ stdenv vips ];
+            buildInputs = with pkgs; [ nodePackages.node-gyp stdenv vips ];
           };
           buildCommands = [
             "export XDG_CONFIG_HOME=\"$(pwd)/.config\""
