@@ -1,5 +1,5 @@
 import * as React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import KiwiZitiImage from "../images/kiwiziti.min.svg";
 
 const InfoSection = () => {
   return (
@@ -15,12 +15,7 @@ const InfoSection = () => {
         <p>6602 Nicks Rd, Mebane, NC 27302</p>
       </div>
       <div>
-        <StaticImage
-          imgStyle={{ objectPosition: "top" }}
-          className="kiwi-ziti-icon"
-          src="../images/kiwiziti.min.svg"
-          alt="us"
-        />
+        <KiwiZitiImage style={{ objectPosition: "top" }} />
       </div>
     </div>
   );
