@@ -6,7 +6,7 @@
     grid-gap: 1rem;
     grid-auto-flow: dense;
   }
-  
+
 .gallery > :hover {
     transition: all ease 0.5s;
     /* cursor: pointer; */
@@ -25,8 +25,8 @@
   }
 
 .info-container {
-    grid-column: span 2 / 4; 
-    grid-row: span 3; 
+    grid-column: span 2 / 4;
+    grid-row: span 3;
     padding: 1rem 1rem 0 1rem;
     text-align: center;
     display: flex;
@@ -46,8 +46,8 @@
 
 @media only screen and (max-width: 600px) {
     .gallery > .info-container {
-        grid-column: span 2 / 2; 
-    } 
+        grid-column: span 2 / 2;
+    }
 }
 
 .title-text {
@@ -59,6 +59,3 @@
     height: 300px;
     width: 100%;
 }
-
-
-
