@@ -13,7 +13,7 @@ export const useGallery = () => {
           id
           name
           childImageSharp {
-            gatsbyImageData(layout: CONSTRAINED, formats: [JPG, WEBP])
+            gatsbyImageData(layout: CONSTRAINED, formats: [JPG, WEBP, AVIF])
           }
         }
       }
