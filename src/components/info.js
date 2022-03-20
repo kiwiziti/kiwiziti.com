@@ -3,7 +3,7 @@ import KiwiZitiImage from "../images/kiwiziti.min.svg";
 
 const InfoSection = () => {
   return (
-    <div className="info-container">
+    <div className="info-container orange-gradient">
       <p className="title-text">We&apos;re getting married!</p>
       <div>
         <b>When</b>
