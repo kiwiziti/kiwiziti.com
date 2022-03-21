@@ -4,12 +4,14 @@ import PropTypes from "prop-types";
 import "./gallery.css";
 import InfoSection from "../components/info";
 import RegistrySection from "../components/registry";
+import RsvpSection from "../components/rsvp";
 
 const Gallery = ({ images }) => {
   return (
     <div className="gallery">
       <InfoSection />
       <RegistrySection />
+      <RsvpSection />
       {images.map(({ id, name, gatsbyImageData }) => (
         <GatsbyImage
           className="image"

@@ -45,6 +45,8 @@
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
+    border: 2px solid #ad5434;
+    border-radius: 0.75em;
 }
 
 .registry-container {
@@ -102,6 +104,53 @@
 
 .button:active::before {
     box-shadow: 0 0 0 2px #758A90, 0 0 #E7EEEF;
+        transform: translate3d(0, 0, -1em);
+}
+
+.rsvp-button {
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border: 2px solid #520014;
+    border-radius: 0.75em;
+    transform-style: preserve-3d;
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+.rsvp-button::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #A9808A;
+    border-radius: inherit;
+    box-shadow: 0 0 0 2px #520014, 0 0.625em 0 0 #D4C0C5;
+    transform: translate3d(0, 0.75em, -1em);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+.rsvp-button:hover {
+    transform: translate(0, 0.25em);
+}
+
+.rsvp-button:hover::before {
+    box-shadow: 0 0 0 2px #520014, 0 0.5em 0 0 #D4C0C5;
+    transform: translate3d(0, 0.5em, -1em);
+}
+
+.rsvp-button:active {
+    transform: translate(0em, 0.75em);
+}
+
+.rsvp-button:active::before {
+    box-shadow: 0 0 0 2px #520014, 0 0 #D4C0C5;
         transform: translate3d(0, 0, -1em);
 }
 
