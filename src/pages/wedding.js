@@ -16,6 +16,7 @@ const pageStyles = {
   color: "#232129",
   fontFamily: "InterVariable",
   backgroundColor: "white",
+  margin: "0.5rem",
 };
 
 const WeddingPage = () => {
