@@ -9,10 +9,20 @@ const RsvpSection = () => {
       target="_blank"
       rel="noreferrer"
     >
-      <b>Can you make it?</b>
       <div>
-        <StaticImage style={{ width: 100 }} src="../images/rsvp.jpeg" />
+        <b style={{ zIndex: 1 }}>Can you make it?</b>
+        <p id="rsvp-text">RSVP</p>
       </div>
+      <StaticImage
+        style={{
+          zIndex: -1,
+          position: "absolute",
+          maxWidth: "30%",
+          right: "20px",
+          bottom: 0,
+        }}
+        src="../images/eucalyptus-background-small.png"
+      />
     </a>
   );
 };

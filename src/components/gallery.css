@@ -165,6 +165,15 @@
     width: 100%;
 }
 
+.eucalyptus-container {
+    flex: 1;
+
+}
+
+#rsvp-text {
+    font-size: 32px;
+}
+
 @media only screen and (max-width: 600px) {
     .gallery > .info-container {
         grid-column: span 2;
