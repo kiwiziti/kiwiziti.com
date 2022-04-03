@@ -10,8 +10,8 @@ const Gallery = ({ images }) => {
   return (
     <div className="gallery">
       <InfoSection />
-      <RegistrySection />
       <RsvpSection />
+      <RegistrySection />
       {images.map(({ id, name, gatsbyImageData }) => (
         <GatsbyImage
           className="image"

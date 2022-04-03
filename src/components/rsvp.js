@@ -9,20 +9,18 @@ const RsvpSection = () => {
       target="_blank"
       rel="noreferrer"
     >
-      <div>
+      <div style={{ paddingBottom: 10 }}>
         <b style={{ zIndex: 1 }}>Can you make it?</b>
         <p id="rsvp-text">RSVP</p>
+        <StaticImage
+          style={{
+            zIndex: -1,
+            maxWidth: "50%",
+            alignSelf: "center",
+          }}
+          src="../images/eucalyptus-bottom.png"
+        />
       </div>
-      <StaticImage
-        style={{
-          zIndex: -1,
-          position: "absolute",
-          maxWidth: "30%",
-          right: "20px",
-          bottom: 0,
-        }}
-        src="../images/eucalyptus-background-small.png"
-      />
     </a>
   );
 };
