@@ -5,6 +5,7 @@ import "./gallery.css";
 import InfoSection from "../components/info";
 import RegistrySection from "../components/registry";
 import RsvpSection from "../components/rsvp";
+import ScheduleSection from "../components/schedule";
 
 const Gallery = ({ images }) => {
   return (
@@ -12,6 +13,7 @@ const Gallery = ({ images }) => {
       <InfoSection />
       <RsvpSection />
       <RegistrySection />
+      <ScheduleSection />
       {images.map(({ id, name, gatsbyImageData }) => (
         <GatsbyImage
           className="image"
