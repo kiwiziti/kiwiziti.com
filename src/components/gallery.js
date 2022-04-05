@@ -7,14 +7,17 @@ import RegistrySection from "../components/registry";
 import RsvpSection from "../components/rsvp";
 import ScheduleSection from "../components/schedule";
 
-const Gallery = ({ images }) => {
-  function shuffle(a) {
-    for (let i = a.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [a[i], a[j]] = [a[j], a[i]];
-    }
-    return a;
+function shuffle(a) {
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
   }
+  return a;
+}
+
+let shuffledImages = shuffle(images);
+
+const Gallery = ({ images }) => {
 
   return (
     <div className="gallery">
@@ -22,7 +25,7 @@ const Gallery = ({ images }) => {
       <RsvpSection />
       <RegistrySection />
       <ScheduleSection />
-      {shuffle(images).map(({ id, name, gatsbyImageData }) => (
+      {shuffledImages.map(({ id, name, gatsbyImageData }) => (
         <GatsbyImage
           className="image"
           key={id}
