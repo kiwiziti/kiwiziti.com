@@ -9,10 +9,15 @@ const RegistrySection = () => {
       target="_blank"
       rel="noreferrer"
     >
-      <b>Registered at</b>
-      <div>
-        <StaticImage src="../images/zola-logo.png" />
-      </div>
+      <p style={{ fontSize: 32, margin: 15 }}>Registry</p>
+      <StaticImage
+        style={{
+          maxWidth: "30%",
+          alignSelf: "center",
+          marginBottom: 15,
+        }}
+        src="../images/zola-icon.png"
+      />
     </a>
   );
 };
